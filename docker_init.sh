@@ -4,7 +4,7 @@ set -e
 
 WORK_DIR=/sing-box
 PORT=$START_PORT
-SUBSCRIBE_TEMPLATE="https://raw.githubusercontent.com/fscarmen/client_template/main"
+SUBSCRIBE_TEMPLATE="https://raw.githubusercontent.com/zdabing/client_template/main"
 
 # 自定义字体彩色，read 函数
 warning() { echo -e "\033[31m\033[01m$*\033[0m"; }  # 红色
@@ -52,7 +52,7 @@ install() {
 
   # 下载 qrencode
   echo "正在下载 qrencode ..."
-  wget -O ${WORK_DIR}/qrencode https://github.com/fscarmen/client_template/raw/main/qrencode-go/qrencode-go-linux-$QRENCODE_ARCH && chmod +x ${WORK_DIR}/qrencode
+  wget -O ${WORK_DIR}/qrencode https://github.com/zdabing/client_template/raw/main/qrencode-go/qrencode-go-linux-$QRENCODE_ARCH && chmod +x ${WORK_DIR}/qrencode
 
   # 下载 cloudflared
   echo "正在下载 cloudflared ..."
